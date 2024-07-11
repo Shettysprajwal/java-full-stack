@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Type Selector */
+        h1 {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #unique {
+            color: green;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Descendant Combinator */
+        div p {
+            background: rgba(105, 255, 105, 0.3);
+        }
+
+        /* Child Combinator */
+        ul > li {
+            color: rgb(233, 40, 233);
+        }
+
+        /* Adjacent Sibling Combinator */
+        h2 + p {
+            color: rgb(191, 152, 80);
+        }
+
+        /* General Sibling Combinator */
+        h3 ~ p {
+            color: rgb(20, 2, 2);
+        }
+
+        /* Attribute Selectors */
+        a[target] {
+            color: rgb(255, 86, 114);
+        }
+        a[target="_blank"] {
+            font-weight: bold;
+        }
+
+        /* Pseudo-classes */
+        a:hover {
+            color: rgb(239, 49, 49);
+        }
+        p:first-child {
+            font-style: italic;
+        }
+
+        /* Pseudo-elements */
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+        }
+        p::after {
+            content: " (End of note)";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Type Selector Example -->
+    <h1>This is a heading</h1>
+
+    <!-- ID Selector Example -->
+    <p id="unique">This paragraph has an ID selector.</p>
+
+    <!-- Class Selector Example -->
+    <p class="highlight">This paragraph is highlighted.</p>
+
+    <!-- Descendant Combinator Example -->
+    <div>
+        <p>This paragraph is inside a div.</p>
+    </div>
+
+    <!-- Child Combinator Example -->
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+
+    <!-- Adjacent Sibling Combinator Example -->
+    <h2>Subheading</h2>
+    <p>This paragraph follows a subheading.</p>
+
+    <!-- General Sibling Combinator Example -->
+    <h3>Another Subheading</h3>
+    <p>This paragraph is a sibling of a subheading.</p>
+    <p>Another paragraph sibling.</p>
+
+    <!-- Attribute Selector Example -->
+    <a href="https://github.com/" target="_self">This link opens in a new tab.</a>
+
+    <!-- Pseudo-classes Example -->
+    <a href="https://github.com/">Hover over this link.</a>
+
+    <!-- Pseudo-elements Example -->
+    <p>This paragraph has pseudo-elements applied.</p>
+</body>
+</html>

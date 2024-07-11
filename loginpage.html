@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .login-container{
+            width: 99vw;
+            height: 99vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(red, yellow);
+        }      
+        .login-box{
+            width: 400px;
+            height: 500px;
+            padding: 1%;
+            margin-top: 0.5%;
+            background-color: #ffffff;
+            border-radius: 30px;
+            text-align: center;
+        }       
+        .login-box {
+            font-size: 30px;
+            font-weight: 60px;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+        .login-button:hover{
+            background-color: #f15050;
+        }
+        .input-box{
+            position: relative;
+            border-radius: 30px;
+            border: 2px solid #000000;
+            padding: 10px;
+            background-color: rgb(231, 222, 222);
+            margin-bottom: 20px;
+            border: none;
+        }
+        input{
+            padding: 20px;
+            border: none;
+        }
+        .link-box{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1px;
+            
+            
+        }
+        .login-button{
+            width: 50%;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #9f8888a0;
+        }
+        .link-button{
+            width: 50%;
+            height: 50px;
+            padding: 300px; 
+            justify-content: space-between;  
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" name="" required="Username" placeholder="Username" >
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="" required="Password" placeholder="password">
+                    </div>
+                <button type="submit" class="login-button"> login</button>
+                <div class="link-box">
+                    <button type="submit" class="login-button"> forgot password</button>
+                    <button type="submit" class="login-button"> signup</button> 
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
